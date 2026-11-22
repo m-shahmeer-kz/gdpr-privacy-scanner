@@ -5,7 +5,7 @@
 **Is there personal data in your dataset?** An AI-agent skill for Claude Code, Codex, Cursor and Gemini CLI that finds personal
 data in datasets and code before you build AI or analytics on them, pseudonymises it on a copy and writes a short GDPR report.
 
-**[Get it on Agensi ($15)](https://www.agensi.io/creators/muhammad-shahmeer)** · **[Results page](https://m-shahmeer-kz.github.io/gdpr-privacy-scanner/)**
+**[Get it on Agensi ($15)](https://www.agensi.io/skills/gdpr-privacy-scanner-find-personal-data-before-you-build-ai)** · **[Results page](https://m-shahmeer-kz.github.io/gdpr-privacy-scanner/)**
 
 > **Not legal advice.** It can miss personal data and can flag columns that are not personal. Have your DPO or a privacy professional
 > confirm the result. Pseudonymised output is still personal data under the GDPR.
