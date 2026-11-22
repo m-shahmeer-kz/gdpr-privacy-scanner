@@ -1,0 +1,6 @@
+{
+ "test": "Check-digit validators compared with python-stdnum 2.2 on valid generated IDs and random look-alikes",
+ "validators": 16,
+ "samples": 53000,
+ "result": "all generated valid IDs accepted; remaining differences are deliberate (Swedish coordination numbers, Finnish temporary IDs, stricter Italian birth-day rule)"
+}

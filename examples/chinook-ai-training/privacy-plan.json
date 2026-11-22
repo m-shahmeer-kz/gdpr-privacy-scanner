@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "about": "Edit 'action' per column, then run apply. Actions: keep (give a reason), drop, pseudonymise, generalise, mask, redact, not_personal (false alarm: give a reason).",
+  "purpose": "ai_training",
+  "files": {
+    "data/chinook.db::Customer": {
+      "columns": {
+        "CustomerId": {
+          "type": "customer_id",
+          "category": "pseudonymous_id",
+          "confidence": "medium",
+          "action": "pseudonymise",
+          "params": {},
+          "reason": "join key Customer<->Invoice; keyed HMAC, same key as Invoice.CustomerId"
+        },
+        "FirstName": {
+          "type": "person_name",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": ""
+        },
+        "LastName": {
+          "type": "person_name",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": ""
+        },
+        "Address": {
+          "type": "postal_address",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": ""
+        },
+        "City": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "medium",
+          "action": "drop",
+          "params": {},
+          "reason": "not needed; 100% of customers unique on City+PostalCode"
+        },
+        "PostalCode": {
+          "type": "postal_code",
+          "category": "quasi",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "not needed; 100% of customers unique on City+PostalCode"
+        },
+        "Phone": {
+          "type": "phone",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": ""
+        },
+        "Fax": {
+          "type": "phone",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": ""
+        },
+        "Email": {
+          "type": "email",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "not needed: pseudonymised CustomerId already links invoices (Art. 5(1)(c))"
+        },
+        "SupportRepId": {
+          "type": "customer_id",
+          "category": "pseudonymous_id",
+          "confidence": "medium",
+          "action": "drop",
+          "params": {},
+          "reason": "staff link not needed to predict purchases"
+        },
+        "Company": {
+          "type": "occupation",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: employer name, 10 values, each unique to one customer"
+        },
+        "State": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: location quasi-identifier, not detected by scanner"
+        },
+        "Country": {
+          "type": "nationality",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: 15 of 24 countries have a single customer (25% unique); re-add only as a coarse region if the model needs it"
+        }
+      },
+      "reidentification": {
+        "unique_share_with_default": 0.8644,
+        "unique_share_planned": 0.0,
+        "target": 0.05,
+        "changes": [
+          "City: drop",
+          "PostalCode: generalise {'keep_chars': 1}",
+          "PostalCode: drop"
+        ],
+        "note": ""
+      }
+    },
+    "data/chinook.db::Employee": {
+      "columns": {
+        "EmployeeId": {
+          "type": "customer_id",
+          "category": "pseudonymous_id",
+          "confidence": "medium",
+          "action": "pseudonymise",
+          "params": {},
+          "reason": "placeholder only (a table needs one column); table removed from training copy after apply"
+        },
+        "LastName": {
+          "type": "person_name",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "FirstName": {
+          "type": "person_name",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "ReportsTo": {
+          "type": "customer_id",
+          "category": "pseudonymous_id",
+          "confidence": "medium",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "BirthDate": {
+          "type": "date_of_birth",
+          "category": "quasi",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "Address": {
+          "type": "postal_address",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "City": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "medium",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "PostalCode": {
+          "type": "postal_code",
+          "category": "quasi",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "Phone": {
+          "type": "phone",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "Fax": {
+          "type": "phone",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "Email": {
+          "type": "email",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "staff data not needed for purchase prediction"
+        },
+        "Title": {
+          "type": "occupation",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: staff quasi-identifier not needed"
+        },
+        "HireDate": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: staff quasi-identifier not needed"
+        },
+        "State": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: staff quasi-identifier not needed"
+        },
+        "Country": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: staff quasi-identifier not needed"
+        }
+      },
+      "reidentification": {
+        "unique_share_with_default": 1.0,
+        "unique_share_planned": 0.25,
+        "target": 0.05,
+        "changes": [
+          "City: drop",
+          "PostalCode: generalise {'keep_chars': 1}",
+          "BirthDate: generalise {'to': 'decade'}",
+          "PostalCode: drop"
+        ],
+        "note": "still above target: consider dropping more columns or aggregating; the data may not be fit to share at record level"
+      }
+    },
+    "data/chinook.db::Invoice": {
+      "columns": {
+        "CustomerId": {
+          "type": "customer_id",
+          "category": "pseudonymous_id",
+          "confidence": "medium",
+          "action": "pseudonymise",
+          "params": {},
+          "reason": "join key to Customer; same key as Customer.CustomerId"
+        },
+        "BillingAddress": {
+          "type": "postal_address",
+          "category": "direct",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "billing location equals the customer's home address in 412/412 invoices; not needed"
+        },
+        "BillingCity": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "medium",
+          "action": "drop",
+          "params": {},
+          "reason": "billing location equals the customer's home address in 412/412 invoices; not needed"
+        },
+        "BillingPostalCode": {
+          "type": "postal_code",
+          "category": "quasi",
+          "confidence": "high",
+          "action": "drop",
+          "params": {},
+          "reason": "billing location equals the customer's home address in 412/412 invoices; not needed"
+        },
+        "BillingState": {
+          "type": "city",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: billing location, not needed"
+        },
+        "BillingCountry": {
+          "type": "nationality",
+          "category": "quasi",
+          "confidence": "manual",
+          "action": "drop",
+          "params": {},
+          "reason": "added by review: billing location, singles out customers in 15 countries"
+        }
+      },
+      "reidentification": {
+        "unique_share_with_default": 0.0,
+        "unique_share_planned": 0.0,
+        "target": 0.05,
+        "changes": [],
+        "note": ""
+      }
+    }
+  }
+}

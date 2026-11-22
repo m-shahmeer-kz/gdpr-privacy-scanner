@@ -1,0 +1,272 @@
+{
+ "test": "scan -> plan -> apply on the 9 real datasets (v1.1.1, default plan, no manual edits)",
+ "before": {
+  "by_category": {
+   "quasi": 36,
+   "special": 7,
+   "pseudonymous_id": 22,
+   "direct": 32,
+   "free_text": 1
+  },
+  "worst_reidentification": {
+   "records": 59,
+   "unique_records": 59,
+   "unique_share": 1.0,
+   "min_k": 1,
+   "records_k_below_5": 59,
+   "groups": 59,
+   "quasi_identifiers": [
+    "City",
+    "PostalCode"
+   ],
+   "file": "/tmp/buyer_gdpr/data/chinook.db",
+   "table": "Customer"
+  }
+ },
+ "after": {
+  "by_category": {
+   "quasi": 16,
+   "pseudonymous_id": 26
+  },
+  "worst_reidentification": {
+   "records": 9,
+   "unique_records": 2,
+   "unique_share": 0.2222,
+   "min_k": 1,
+   "records_k_below_5": 9,
+   "groups": 4,
+   "quasi_identifiers": [
+    "TitleOfCourtesy"
+   ],
+   "file": "/tmp/buyer_gdpr/flow111/pseudonymised/northwind.db",
+   "table": "Employees"
+  }
+ },
+ "reidentification": [
+  {
+   "table": "/tmp/buyer_gdpr/data/Heart.csv",
+   "quasi_identifiers_before": [
+    "Age",
+    "Sex"
+   ],
+   "quasi_identifiers_after": [
+    "Age",
+    "Sex"
+   ],
+   "unique_share_before": 0.0462,
+   "min_k_before": 1,
+   "unique_share_after": 0.0033,
+   "min_k_after": 1
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/Telco-Customer-Churn.csv",
+   "quasi_identifiers_before": [
+    "gender",
+    "SeniorCitizen",
+    "Partner"
+   ],
+   "quasi_identifiers_after": [
+    "gender",
+    "SeniorCitizen",
+    "Partner"
+   ],
+   "unique_share_before": 0.0,
+   "min_k_before": 248,
+   "unique_share_after": 0.0,
+   "min_k_after": 1688
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/adult.csv",
+   "quasi_identifiers_before": [
+    "age",
+    "education",
+    "educational-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "gender",
+    "capital-gain",
+    "capital-loss",
+    "native-country",
+    "income"
+   ],
+   "quasi_identifiers_after": [
+    "age",
+    "education",
+    "educational-num",
+    "marital-status",
+    "relationship",
+    "gender",
+    "capital-gain",
+    "capital-loss",
+    "income"
+   ],
+   "unique_share_before": 0.5728,
+   "min_k_before": 1,
+   "unique_share_after": 0.0134,
+   "min_k_after": 1
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/chinook.db::Customer",
+   "quasi_identifiers_before": [
+    "City",
+    "PostalCode"
+   ],
+   "quasi_identifiers_after": [],
+   "unique_share_before": 1.0,
+   "min_k_before": 1,
+   "unique_share_after": 0.0,
+   "min_k_after": null
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/chinook.db::Employee",
+   "quasi_identifiers_before": [
+    "BirthDate",
+    "City",
+    "PostalCode"
+   ],
+   "quasi_identifiers_after": [
+    "BirthDate"
+   ],
+   "unique_share_before": 1.0,
+   "min_k_before": 1,
+   "unique_share_after": 0.25,
+   "min_k_after": 1
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/chinook.db::Invoice",
+   "quasi_identifiers_before": [
+    "BillingCity",
+    "BillingPostalCode"
+   ],
+   "quasi_identifiers_after": [
+    "BillingCity",
+    "BillingPostalCode"
+   ],
+   "unique_share_before": 0.0,
+   "min_k_before": 6,
+   "unique_share_after": 0.0,
+   "min_k_after": 6
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/insurance.csv",
+   "quasi_identifiers_before": [
+    "age",
+    "sex"
+   ],
+   "quasi_identifiers_after": [
+    "age",
+    "sex"
+   ],
+   "unique_share_before": 0.0,
+   "min_k_before": 11,
+   "unique_share_after": 0.0,
+   "min_k_after": 56
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/northwind.db::Customers",
+   "quasi_identifiers_before": [
+    "ContactTitle"
+   ],
+   "quasi_identifiers_after": [
+    "ContactTitle"
+   ],
+   "unique_share_before": 0.0215,
+   "min_k_before": 1,
+   "unique_share_after": 0.0215,
+   "min_k_after": 1
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/northwind.db::Employees",
+   "quasi_identifiers_before": [
+    "TitleOfCourtesy",
+    "BirthDate",
+    "City",
+    "PostalCode"
+   ],
+   "quasi_identifiers_after": [
+    "TitleOfCourtesy",
+    "BirthDate"
+   ],
+   "unique_share_before": 1.0,
+   "min_k_before": 1,
+   "unique_share_after": 0.5556,
+   "min_k_after": 1
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/northwind.db::Orders",
+   "quasi_identifiers_before": [
+    "ShipCity",
+    "ShipPostalCode"
+   ],
+   "quasi_identifiers_after": [
+    "ShipCity",
+    "ShipPostalCode"
+   ],
+   "unique_share_before": 0.0,
+   "min_k_before": 142,
+   "unique_share_after": 0.0,
+   "min_k_after": 142
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/northwind.db::Suppliers",
+   "quasi_identifiers_before": [
+    "ContactTitle"
+   ],
+   "quasi_identifiers_after": [],
+   "unique_share_before": 0.3448,
+   "min_k_before": 1,
+   "unique_share_after": 0.0,
+   "min_k_after": null
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/sakila.db::address",
+   "quasi_identifiers_before": [
+    "postal_code"
+   ],
+   "quasi_identifiers_after": [
+    "postal_code"
+   ],
+   "unique_share_before": 0.9834,
+   "min_k_before": 1,
+   "unique_share_after": 0.0066,
+   "min_k_after": 1
+  },
+  {
+   "table": "/tmp/buyer_gdpr/data/titanic3.csv",
+   "quasi_identifiers_before": [
+    "sex",
+    "age"
+   ],
+   "quasi_identifiers_after": [
+    "sex",
+    "age"
+   ],
+   "unique_share_before": 0.029,
+   "min_k_before": 1,
+   "unique_share_after": 0.0015,
+   "min_k_after": 1
+  }
+ ],
+ "broken_views": [
+  "northwind.db::Customer and Suppliers by City",
+  "northwind.db::Invoices",
+  "northwind.db::Orders Qry",
+  "sakila.db::customer_list",
+  "sakila.db::film_list",
+  "sakila.db::staff_list",
+  "sakila.db::sales_by_store"
+ ],
+ "raw_value_leak_check": {
+  "raw_values_checked": 4900,
+  "files_checked": [
+   "privacy-report.md",
+   "privacy-plan.json",
+   "findings.json",
+   "apply-result.json",
+   "after-check/privacy-report.md",
+   "after-check/findings.json"
+  ],
+  "files_with_raw_values": 0
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "test": "Code scanner on 3 real open-source projects; every finding checked by reading the code",
+ "projects": [
+  {
+   "repo": "miguelgrinberg/microblog",
+   "commit": "a975ef6"
+  },
+  {
+   "repo": "fastapi/full-stack-fastapi-template",
+   "commit": "77e550a"
+  },
+  {
+   "repo": "mckaywrigley/chatbot-ui",
+   "commit": "81328b6"
+  }
+ ],
+ "frozen_1.0.0": {
+  "findings": 7,
+  "confirmed": 1,
+  "false_alarms": 6,
+  "confirmed_detail": "microblog app/models.py:141 MD5 of the user's e-mail sent to Gravatar (unkeyed hash, PRV006)",
+  "false_alarm_detail": "1 log line whose text says 'send email result' but logs the SMTP response; 5 obviously fake e-mails in test files"
+ },
+ "after_fixes_1.0.2": {
+  "findings": 1,
+  "confirmed": 1,
+  "false_alarms": 0,
+  "note": "fixes made after seeing this test: not blind"
+ },
+ "dev_fixtures": {
+  "planted": 13,
+  "found": 13,
+  "extra": 0
+ }
+}

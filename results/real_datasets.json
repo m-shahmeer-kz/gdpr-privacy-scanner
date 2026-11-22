@@ -1,0 +1,4589 @@
+{
+ "test": "Real public datasets, expected answers written before the first run",
+ "datasets": [
+  "Chinook (SQLite)",
+  "Northwind (SQLite)",
+  "Sakila (SQLite)",
+  "Titanic (titanic3.csv)",
+  "UCI Adult census",
+  "Cleveland heart disease",
+  "US medical insurance",
+  "IBM Telco churn",
+  "UCI red wine (negative control)"
+ ],
+ "frozen_1.0.0": {
+  "columns": 325,
+  "personal_columns": 111,
+  "non_personal_columns": 214,
+  "detected": 78,
+  "missed": 33,
+  "false_alarms": 28,
+  "recall": 0.7027,
+  "precision": 0.7358,
+  "rows": [
+   {
+    "table": "Heart.csv",
+    "column": "column_1",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Sex",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "ChestPain",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "RestBP",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Chol",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Fbs",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "RestECG",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "MaxHR",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "ExAng",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Oldpeak",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Slope",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Ca",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Thal",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "AHD",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "customerID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "gender",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "SeniorCitizen",
+    "expected": "age",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Partner",
+    "expected": "marital_status",
+    "got": "marital_status",
+    "status": "TP"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Dependents",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "tenure",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "PhoneService",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "MultipleLines",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "InternetService",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "OnlineSecurity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "OnlineBackup",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "DeviceProtection",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "TechSupport",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "StreamingTV",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "StreamingMovies",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Contract",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "PaperlessBilling",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "PaymentMethod",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "MonthlyCharges",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "TotalCharges",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Churn",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "workclass",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "fnlwgt",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "education",
+    "expected": "education",
+    "got": "education",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "educational-num",
+    "expected": "education",
+    "got": "education",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "marital-status",
+    "expected": "marital_status",
+    "got": "marital_status",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "occupation",
+    "expected": "occupation",
+    "got": "occupation",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "relationship",
+    "expected": "marital_status",
+    "got": "marital_status",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "race",
+    "expected": "racial_ethnic_origin",
+    "got": "racial_ethnic_origin",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "gender",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "capital-gain",
+    "expected": "income",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "capital-loss",
+    "expected": "income",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "hours-per-week",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "native-country",
+    "expected": "nationality",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "income",
+    "expected": "income",
+    "got": "income",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "sex",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "bmi",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "children",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "smoker",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "region",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "charges",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "pclass",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "survived",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "sex",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "sibsp",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "parch",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "ticket",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "fare",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "cabin",
+    "expected": null,
+    "got": "health",
+    "status": "FP"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "embarked",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "boat",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "body",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "home.dest",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "fixed acidity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "volatile acidity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "citric acid",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "residual sugar",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "chlorides",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "free sulfur dioxide",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "total sulfur dioxide",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "density",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "pH",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "sulphates",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "alcohol",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "quality",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Album",
+    "column": "AlbumId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Album",
+    "column": "Title",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Album",
+    "column": "ArtistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Artist",
+    "column": "ArtistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Artist",
+    "column": "Name",
+    "expected": null,
+    "got": "person_name",
+    "status": "FP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "CustomerId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "FirstName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "LastName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Company",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "City",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "State",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "PostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Phone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Fax",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "SupportRepId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "EmployeeId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "LastName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "FirstName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Title",
+    "expected": "occupation",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "ReportsTo",
+    "expected": "customer_id",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "BirthDate",
+    "expected": "date_of_birth",
+    "got": "date_of_birth",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "HireDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "City",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "State",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "PostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Phone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Fax",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Genre",
+    "column": "GenreId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Genre",
+    "column": "Name",
+    "expected": null,
+    "got": "person_name",
+    "status": "FP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "InvoiceId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "CustomerId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "InvoiceDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingAddress",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingCity",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingState",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingCountry",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingPostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "Total",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "InvoiceLineId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "InvoiceId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "TrackId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "Quantity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::MediaType",
+    "column": "MediaTypeId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::MediaType",
+    "column": "Name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Playlist",
+    "column": "PlaylistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Playlist",
+    "column": "Name",
+    "expected": null,
+    "got": "person_name",
+    "status": "FP"
+   },
+   {
+    "table": "chinook.db::PlaylistTrack",
+    "column": "PlaylistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::PlaylistTrack",
+    "column": "TrackId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "TrackId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Name",
+    "expected": null,
+    "got": "person_name",
+    "status": "FP"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "AlbumId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "MediaTypeId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "GenreId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Composer",
+    "expected": "person_name",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Milliseconds",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Bytes",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "CategoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "CategoryName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "Description",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "Picture",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::CustomerCustomerDemo",
+    "column": "CustomerID",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::CustomerCustomerDemo",
+    "column": "CustomerTypeID",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::CustomerDemographics",
+    "column": "CustomerTypeID",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::CustomerDemographics",
+    "column": "CustomerDesc",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "CustomerID",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "CompanyName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "ContactName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "ContactTitle",
+    "expected": "occupation",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Address",
+    "expected": null,
+    "got": "postal_address",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "City",
+    "expected": null,
+    "got": "city",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Region",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "PostalCode",
+    "expected": null,
+    "got": "postal_code",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Phone",
+    "expected": null,
+    "got": "phone",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Fax",
+    "expected": null,
+    "got": "phone",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::EmployeeTerritories",
+    "column": "EmployeeID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::EmployeeTerritories",
+    "column": "TerritoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "EmployeeID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "LastName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "FirstName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Title",
+    "expected": "occupation",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "TitleOfCourtesy",
+    "expected": "gender",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "BirthDate",
+    "expected": "date_of_birth",
+    "got": "date_of_birth",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "HireDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "City",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Region",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "PostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "HomePhone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Extension",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Photo",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Notes",
+    "expected": "free_text",
+    "got": "free_text",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "ReportsTo",
+    "expected": "customer_id",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "PhotoPath",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "OrderID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "ProductID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "Quantity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "Discount",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "OrderID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "CustomerID",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "EmployeeID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "OrderDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "RequiredDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShippedDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipVia",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "Freight",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipAddress",
+    "expected": null,
+    "got": "postal_address",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipCity",
+    "expected": null,
+    "got": "city",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipRegion",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipPostalCode",
+    "expected": null,
+    "got": "postal_code",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipCountry",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "ProductID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "ProductName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "SupplierID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "CategoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "QuantityPerUnit",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "UnitsInStock",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "UnitsOnOrder",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "ReorderLevel",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "Discontinued",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Regions",
+    "column": "RegionID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Regions",
+    "column": "RegionDescription",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Shippers",
+    "column": "ShipperID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Shippers",
+    "column": "CompanyName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Shippers",
+    "column": "Phone",
+    "expected": null,
+    "got": "phone",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "SupplierID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "CompanyName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "ContactName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "ContactTitle",
+    "expected": "occupation",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Address",
+    "expected": null,
+    "got": "postal_address",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "City",
+    "expected": null,
+    "got": "city",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Region",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "PostalCode",
+    "expected": null,
+    "got": "postal_code",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Phone",
+    "expected": null,
+    "got": "phone",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Fax",
+    "expected": null,
+    "got": "phone",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "HomePage",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Territories",
+    "column": "TerritoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Territories",
+    "column": "TerritoryDescription",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Territories",
+    "column": "RegionID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "actor_id",
+    "expected": "customer_id",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "first_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "last_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "address2",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "district",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "city_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "postal_code",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "phone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::category",
+    "column": "category_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::category",
+    "column": "name",
+    "expected": null,
+    "got": "person_name",
+    "status": "FP"
+   },
+   {
+    "table": "sakila.db::category",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "city_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "city",
+    "expected": null,
+    "got": "city",
+    "status": "FP"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "country_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::country",
+    "column": "country_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::country",
+    "column": "country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::country",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "customer_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "first_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "last_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "active",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "create_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "title",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "description",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "release_year",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "language_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "original_language_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "rental_duration",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "rental_rate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "length",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "replacement_cost",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "rating",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "special_features",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_actor",
+    "column": "actor_id",
+    "expected": "customer_id",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "sakila.db::film_actor",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_actor",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_category",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_category",
+    "column": "category_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_category",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_text",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_text",
+    "column": "title",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_text",
+    "column": "description",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "inventory_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::language",
+    "column": "language_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::language",
+    "column": "name",
+    "expected": null,
+    "got": "person_name",
+    "status": "FP"
+   },
+   {
+    "table": "sakila.db::language",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "payment_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "customer_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "rental_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "amount",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "payment_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "rental_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "rental_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "inventory_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "customer_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "return_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "first_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "last_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "picture",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "active",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "username",
+    "expected": "customer_id",
+    "got": "person_name",
+    "status": "TP-wrong-type"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "password",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "manager_staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   }
+  ]
+ },
+ "after_fixes_1.1.x": {
+  "columns": 325,
+  "personal_columns": 111,
+  "non_personal_columns": 214,
+  "detected": 93,
+  "missed": 18,
+  "false_alarms": 5,
+  "recall": 0.8378,
+  "precision": 0.949,
+  "note": "fixes made after seeing this test: not blind",
+  "rows": [
+   {
+    "table": "Heart.csv",
+    "column": "column_1",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Sex",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "ChestPain",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "RestBP",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Chol",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Fbs",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "RestECG",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "MaxHR",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "ExAng",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Oldpeak",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Slope",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Ca",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "Thal",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Heart.csv",
+    "column": "AHD",
+    "expected": "health",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "customerID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "gender",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "SeniorCitizen",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Partner",
+    "expected": "marital_status",
+    "got": "marital_status",
+    "status": "TP"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Dependents",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "tenure",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "PhoneService",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "MultipleLines",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "InternetService",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "OnlineSecurity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "OnlineBackup",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "DeviceProtection",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "TechSupport",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "StreamingTV",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "StreamingMovies",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Contract",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "PaperlessBilling",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "PaymentMethod",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "MonthlyCharges",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "TotalCharges",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "Telco-Customer-Churn.csv",
+    "column": "Churn",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "workclass",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "fnlwgt",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "education",
+    "expected": "education",
+    "got": "education",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "educational-num",
+    "expected": "education",
+    "got": "education",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "marital-status",
+    "expected": "marital_status",
+    "got": "marital_status",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "occupation",
+    "expected": "occupation",
+    "got": "occupation",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "relationship",
+    "expected": "marital_status",
+    "got": "marital_status",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "race",
+    "expected": "racial_ethnic_origin",
+    "got": "racial_ethnic_origin",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "gender",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "capital-gain",
+    "expected": "income",
+    "got": "income",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "capital-loss",
+    "expected": "income",
+    "got": "income",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "hours-per-week",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "adult.csv",
+    "column": "native-country",
+    "expected": "nationality",
+    "got": "nationality",
+    "status": "TP"
+   },
+   {
+    "table": "adult.csv",
+    "column": "income",
+    "expected": "income",
+    "got": "income",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "sex",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "bmi",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "children",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "smoker",
+    "expected": "health",
+    "got": "health",
+    "status": "TP"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "region",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "insurance.csv",
+    "column": "charges",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "pclass",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "survived",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "sex",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "age",
+    "expected": "age",
+    "got": "age",
+    "status": "TP"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "sibsp",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "parch",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "ticket",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "fare",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "cabin",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "embarked",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "boat",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "body",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "titanic3.csv",
+    "column": "home.dest",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "fixed acidity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "volatile acidity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "citric acid",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "residual sugar",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "chlorides",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "free sulfur dioxide",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "total sulfur dioxide",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "density",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "pH",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "sulphates",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "alcohol",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "winequality-red.csv",
+    "column": "quality",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Album",
+    "column": "AlbumId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Album",
+    "column": "Title",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Album",
+    "column": "ArtistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Artist",
+    "column": "ArtistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Artist",
+    "column": "Name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "CustomerId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "FirstName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "LastName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Company",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "City",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "State",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "PostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Phone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Fax",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "Email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Customer",
+    "column": "SupportRepId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "EmployeeId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "LastName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "FirstName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Title",
+    "expected": "occupation",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "ReportsTo",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "BirthDate",
+    "expected": "date_of_birth",
+    "got": "date_of_birth",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "HireDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "City",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "State",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "PostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Phone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Fax",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Employee",
+    "column": "Email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Genre",
+    "column": "GenreId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Genre",
+    "column": "Name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "InvoiceId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "CustomerId",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "InvoiceDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingAddress",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingCity",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingState",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingCountry",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "BillingPostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "chinook.db::Invoice",
+    "column": "Total",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "InvoiceLineId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "InvoiceId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "TrackId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::InvoiceLine",
+    "column": "Quantity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::MediaType",
+    "column": "MediaTypeId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::MediaType",
+    "column": "Name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Playlist",
+    "column": "PlaylistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Playlist",
+    "column": "Name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::PlaylistTrack",
+    "column": "PlaylistId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::PlaylistTrack",
+    "column": "TrackId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "TrackId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "AlbumId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "MediaTypeId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "GenreId",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Composer",
+    "expected": "person_name",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Milliseconds",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "Bytes",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "chinook.db::Track",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "CategoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "CategoryName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "Description",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Categories",
+    "column": "Picture",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::CustomerCustomerDemo",
+    "column": "CustomerID",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::CustomerCustomerDemo",
+    "column": "CustomerTypeID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::CustomerDemographics",
+    "column": "CustomerTypeID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::CustomerDemographics",
+    "column": "CustomerDesc",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "CustomerID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "CompanyName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "ContactName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "ContactTitle",
+    "expected": "occupation",
+    "got": "occupation",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Address",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "City",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Region",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "PostalCode",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Phone",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Customers",
+    "column": "Fax",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::EmployeeTerritories",
+    "column": "EmployeeID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::EmployeeTerritories",
+    "column": "TerritoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "EmployeeID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "LastName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "FirstName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Title",
+    "expected": "occupation",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "TitleOfCourtesy",
+    "expected": "gender",
+    "got": "gender",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "BirthDate",
+    "expected": "date_of_birth",
+    "got": "date_of_birth",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "HireDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "City",
+    "expected": "city",
+    "got": "city",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Region",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "PostalCode",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "HomePhone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Extension",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Photo",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "Notes",
+    "expected": "free_text",
+    "got": "free_text",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "ReportsTo",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Employees",
+    "column": "PhotoPath",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "OrderID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "ProductID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "Quantity",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Order Details",
+    "column": "Discount",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "OrderID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "CustomerID",
+    "expected": null,
+    "got": "customer_id",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "EmployeeID",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "OrderDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "RequiredDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShippedDate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipVia",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "Freight",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipAddress",
+    "expected": null,
+    "got": "postal_address",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipCity",
+    "expected": null,
+    "got": "city",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipRegion",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipPostalCode",
+    "expected": null,
+    "got": "postal_code",
+    "status": "FP"
+   },
+   {
+    "table": "northwind.db::Orders",
+    "column": "ShipCountry",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "ProductID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "ProductName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "SupplierID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "CategoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "QuantityPerUnit",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "UnitPrice",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "UnitsInStock",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "UnitsOnOrder",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "ReorderLevel",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Products",
+    "column": "Discontinued",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Regions",
+    "column": "RegionID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Regions",
+    "column": "RegionDescription",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Shippers",
+    "column": "ShipperID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Shippers",
+    "column": "CompanyName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Shippers",
+    "column": "Phone",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "SupplierID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "CompanyName",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "ContactName",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "ContactTitle",
+    "expected": "occupation",
+    "got": "occupation",
+    "status": "TP"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Address",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "City",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Region",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "PostalCode",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Phone",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "Fax",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Suppliers",
+    "column": "HomePage",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Territories",
+    "column": "TerritoryID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Territories",
+    "column": "TerritoryDescription",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "northwind.db::Territories",
+    "column": "RegionID",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "actor_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "first_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "last_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::actor",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "address",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "address2",
+    "expected": "postal_address",
+    "got": "postal_address",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "district",
+    "expected": "city",
+    "got": null,
+    "status": "FN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "city_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "postal_code",
+    "expected": "postal_code",
+    "got": "postal_code",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "phone",
+    "expected": "phone",
+    "got": "phone",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::address",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::category",
+    "column": "category_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::category",
+    "column": "name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::category",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "city_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "city",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "country_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::city",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::country",
+    "column": "country_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::country",
+    "column": "country",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::country",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "customer_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "first_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "last_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "active",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "create_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::customer",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "title",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "description",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "release_year",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "language_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "original_language_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "rental_duration",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "rental_rate",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "length",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "replacement_cost",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "rating",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "special_features",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_actor",
+    "column": "actor_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::film_actor",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_actor",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_category",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_category",
+    "column": "category_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_category",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_text",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_text",
+    "column": "title",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::film_text",
+    "column": "description",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "inventory_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "film_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::inventory",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::language",
+    "column": "language_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::language",
+    "column": "name",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::language",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "payment_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "customer_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "rental_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "amount",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "payment_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::payment",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "rental_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "rental_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "inventory_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "customer_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "return_date",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::rental",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "first_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "last_name",
+    "expected": "person_name",
+    "got": "person_name",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "picture",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "email",
+    "expected": "email",
+    "got": "email",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "active",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "username",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "password",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::staff",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "store_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "manager_staff_id",
+    "expected": "customer_id",
+    "got": "customer_id",
+    "status": "TP"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "address_id",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   },
+   {
+    "table": "sakila.db::store",
+    "column": "last_update",
+    "expected": null,
+    "got": null,
+    "status": "TN"
+   }
+  ]
+ }
+}

@@ -1,0 +1,3614 @@
+{
+ "test": "Blind holdout 1",
+ "built_by": "a fresh AI agent that never saw the scanner (18 tables, 256 columns, 14 languages incl. Czech, Hungarian, Greek)",
+ "frozen_versions": {
+  "1.0.0": {
+   "columns": 256,
+   "personal_columns": 139,
+   "non_personal_columns": 117,
+   "detected": 94,
+   "missed": 45,
+   "false_alarms": 15,
+   "recall": 0.6763,
+   "precision": 0.8624,
+   "rows": [
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "KundenNr",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Anrede",
+     "expected": "gender",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Vorname",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Nachname",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Strasse_HausNr",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "PLZ",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Ort",
+     "expected": "city",
+     "got": "city",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Tel",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "E-Mail",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Geb_Datum",
+     "expected": "date_of_birth",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "SteuerID",
+     "expected": "national_id",
+     "got": "de_steuer_id",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "IBAN",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Kunde_seit",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Umsatz_12M_EUR",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Filiale",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Filiale_PLZ",
+     "expected": null,
+     "got": "postal_code",
+     "status": "FP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Segment",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Ø_Alter_Segment",
+     "expected": null,
+     "got": "age",
+     "status": "FP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "field_7",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Bemerkung",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "id_ordine",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "cod_cliente",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "data_ordine",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "sku",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "ean",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "descrizione_prodotto",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "prezzo_unit",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "totale_eur",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "indirizzo_spedizione",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "cap",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "citta",
+     "expected": "city",
+     "got": "city",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "cod_fiscale",
+     "expected": "national_id",
+     "got": "it_codice_fiscale",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "piva_venditore",
+     "expected": null,
+     "got": "vat_number",
+     "status": "FP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "magazzino",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "corriere",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "n_tracking",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "ip_cliente",
+     "expected": "ip_address",
+     "got": "ip_address",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "note_consegna",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "id_empleado",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "nombre_completo",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "dni_nie",
+     "expected": "national_id",
+     "got": "es_dni_nie",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "iban_nomina",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "email_corporativo",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "salario_bruto_anual",
+     "expected": "income",
+     "got": "income",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "departamento",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "puesto",
+     "expected": "occupation",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "fecha_alta",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "fecha_nacimiento",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "estado_civil",
+     "expected": "marital_status",
+     "got": "marital_status",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "afiliacion_sindical",
+     "expected": "trade_union",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "motivo_baja",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "centro_trabajo",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "cuenta_contable",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "cif_empresa",
+     "expected": null,
+     "got": "vat_number",
+     "status": "FP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "IPP",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "NIR",
+     "expected": "national_id",
+     "got": "fr_nir",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "nom",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "prenom",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "date_naissance",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "sexe",
+     "expected": "gender",
+     "got": "gender",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "groupe_sanguin",
+     "expected": "health",
+     "got": "health",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "code_cim10",
+     "expected": "health",
+     "got": "health",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "test_brca1",
+     "expected": "genetic",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "medecin_referent",
+     "expected": "person_name",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "service",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "chambre",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "date_entree",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "mutuelle",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "finess_etab",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "commentaire_infirmier",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "claimnummer",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "schadedatum",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "schadebedrag",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.naam",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.bsn",
+     "expected": "national_id",
+     "got": "nl_bsn",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.geboortedatum",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.adres.straat",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.adres.postcode",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.adres.woonplaats",
+     "expected": "city",
+     "got": "city",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.telefoon",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "voertuig.kenteken",
+     "expected": "vehicle_plate",
+     "got": "vehicle_plate",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "voertuig.merk",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "voertuig.bouwjaar",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "omschrijving",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "expert.bureau",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "expert.vestiging",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "expert.kvk",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "n_processo",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "nome_aluno",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "data_nascimento",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "idade",
+     "expected": "age",
+     "got": "age",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "nif_aluno",
+     "expected": "national_id",
+     "got": "pt_nif",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "turma",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "ano_letivo",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "encarregado_educacao",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "telemovel_ee",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "email_ee",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "nee",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "emrc",
+     "expected": "religion",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "escola",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "morada_escola",
+     "expected": null,
+     "got": "postal_address",
+     "status": "FP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "cod_postal_escola",
+     "expected": null,
+     "got": "postal_code",
+     "status": "FP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "media_turma",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "nr_karty",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "imie_i_nazwisko",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "pesel",
+     "expected": "national_id",
+     "got": "pl_pesel",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "plec",
+     "expected": "gender",
+     "got": "gender",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "wiek",
+     "expected": "age",
+     "got": "age",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "tel",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "e_mail",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "kontuzje_uwagi",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "szablon_odcisku_palca",
+     "expected": "biometric",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "klub",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "adres_klubu",
+     "expected": null,
+     "got": "postal_address",
+     "status": "FP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "karnet_typ",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "cena_pln",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "data_zakupu",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "kod_promocyjny",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "resa_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "forar_id",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "passagerar_id",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "forare_personnr",
+     "expected": "national_id",
+     "got": "se_personnummer",
+     "status": "TP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "regnr",
+     "expected": "vehicle_plate",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "start_lat",
+     "expected": "geolocation",
+     "got": "geolocation",
+     "status": "TP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "start_lon",
+     "expected": "geolocation",
+     "got": "geolocation",
+     "status": "TP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "starttid",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "avstand_km",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "pris_sek",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "betalmetod",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "enhets_id",
+     "expected": "device_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "zon",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "zon_lat",
+     "expected": null,
+     "got": "geolocation",
+     "status": "FP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "zon_lon",
+     "expected": null,
+     "got": "geolocation",
+     "status": "FP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "signup_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "first_name",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "postcode",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "consent.marketing",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "consent.ts",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "consent.policy_version",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.campaign",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.ip",
+     "expected": "ip_address",
+     "got": "ip_address",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.ua",
+     "expected": "user_agent",
+     "got": "user_agent",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.landing_page",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "prefs.topics",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "prefs.frequency",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "event_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "tidsstempel",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "cookie_id",
+     "expected": "device_id",
+     "got": "device_id",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "session_id",
+     "expected": "device_id",
+     "got": "device_id",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "bruger_id",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "ip_adresse",
+     "expected": "ip_address",
+     "got": "ip_address",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "user_agent",
+     "expected": "user_agent",
+     "got": "user_agent",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "annonce_id",
+     "expected": "device_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "side_url",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "produkt_sku",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "kurv_vaerdi_dkk",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "indholds_hash",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "server_ip",
+     "expected": null,
+     "got": "ip_address",
+     "status": "FP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "cislo_tiketu",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "vytvoreno",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "jmeno_zakaznika",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "rodne_cislo",
+     "expected": "national_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "telefon",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "predmet",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "popis_problemu",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "stav",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "resitel",
+     "expected": "person_name",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "produkt",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "cislo_objednavky",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "tranzakcio_azonosito",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "ugyfel_azonosito",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "szamla_iban",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "c3",
+     "expected": "payment_card",
+     "got": "payment_card",
+     "status": "TP"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "szemelyi_szam",
+     "expected": "national_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "osszeg_huf",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "konyvelesi_datum",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "kereskedo",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "kereskedo_varos",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "mcc",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "kozlemeny",
+     "expected": "free_text",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "csatorna",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "referencia_hash",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "laite_id",
+     "expected": "device_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "mittausaika",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "lampotila_c",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "kulutus_kwh",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "firmware",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "anturi_malli",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "asiakas_hetu",
+     "expected": "national_id",
+     "got": "fi_hetu",
+     "status": "TP"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "asennusosoite",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "postinumero",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "kunta",
+     "expected": "city",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "koordinaatit",
+     "expected": "geolocation",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "col12",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "verkkoalue",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "ApplicantRef",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Full Name",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Mobile",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "NINO",
+     "expected": "national_id",
+     "got": "uk_nino",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "PPSN",
+     "expected": "national_id",
+     "got": "ie_pps",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "DOB",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Nationality",
+     "expected": "nationality",
+     "got": "nationality",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Highest Qualification",
+     "expected": "education",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Current Job Title",
+     "expected": "occupation",
+     "got": "occupation",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Current Employer",
+     "expected": null,
+     "got": "occupation",
+     "status": "FP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Expected Salary",
+     "expected": "income",
+     "got": "income",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Ethnicity",
+     "expected": "racial_ethnic_origin",
+     "got": "racial_ethnic_origin",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Disability",
+     "expected": "health",
+     "got": "health",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Unspent Convictions",
+     "expected": "criminal",
+     "got": "criminal",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Sexual Orientation",
+     "expected": "sex_life_orientation",
+     "got": "sex_life_orientation",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Vacancy Code",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Applied On",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Recruiter Notes",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "entry_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "posting_date",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "account_code",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "cost_center",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "description",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "amount_eur",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "currency",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_name",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_vat",
+     "expected": null,
+     "got": "vat_number",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_iban",
+     "expected": null,
+     "got": "iban",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_email",
+     "expected": null,
+     "got": "email",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_phone",
+     "expected": null,
+     "got": "phone",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "invoice_no",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "fiscal_period",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "claim_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "emp_no",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "employee_name",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "work_email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "iban",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "amount",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "category",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "submitted_at",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "approver",
+     "expected": "person_name",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "receipt_ref",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "notes",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "αναγνωριστικό_ερωτώμενου",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "έκδοση_ερωτηματολογίου",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "ημερομηνία_υποβολής",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "ηλικία",
+     "expected": "age",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "φύλο",
+     "expected": "gender",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "πόλη",
+     "expected": "city",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "οικογενειακή_κατάσταση",
+     "expected": "marital_status",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "εισόδημα_κλίμακα",
+     "expected": "income",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "θρήσκευμα",
+     "expected": "religion",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "κόμμα_ψήφου",
+     "expected": "political_opinion",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "μέλος_συνδικάτου",
+     "expected": "trade_union",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "χρόνια_πάθηση",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "q7",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "σχόλια",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "app_server.log",
+     "column": "line",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    }
+   ]
+  },
+  "1.0.1": {
+   "columns": 256,
+   "personal_columns": 139,
+   "non_personal_columns": 117,
+   "detected": 96,
+   "missed": 43,
+   "false_alarms": 15,
+   "recall": 0.6906,
+   "precision": 0.8649,
+   "rows": [
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "KundenNr",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Anrede",
+     "expected": "gender",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Vorname",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Nachname",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Strasse_HausNr",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "PLZ",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Ort",
+     "expected": "city",
+     "got": "city",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Tel",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "E-Mail",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Geb_Datum",
+     "expected": "date_of_birth",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "SteuerID",
+     "expected": "national_id",
+     "got": "de_steuer_id",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "IBAN",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Kunde_seit",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Umsatz_12M_EUR",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Filiale",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Filiale_PLZ",
+     "expected": null,
+     "got": "postal_code",
+     "status": "FP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Segment",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Ø_Alter_Segment",
+     "expected": null,
+     "got": "age",
+     "status": "FP"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "field_7",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "crm_kunden_export.csv",
+     "column": "Bemerkung",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "id_ordine",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "cod_cliente",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "data_ordine",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "sku",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "ean",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "descrizione_prodotto",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "prezzo_unit",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "totale_eur",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "indirizzo_spedizione",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "cap",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "citta",
+     "expected": "city",
+     "got": "city",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "cod_fiscale",
+     "expected": "national_id",
+     "got": "it_codice_fiscale",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "piva_venditore",
+     "expected": null,
+     "got": "vat_number",
+     "status": "FP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "magazzino",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "corriere",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "n_tracking",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "ip_cliente",
+     "expected": "ip_address",
+     "got": "ip_address",
+     "status": "TP"
+    },
+    {
+     "table": "ordini_ecommerce.csv",
+     "column": "note_consegna",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "id_empleado",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "nombre_completo",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "dni_nie",
+     "expected": "national_id",
+     "got": "es_dni_nie",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "iban_nomina",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "email_corporativo",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "salario_bruto_anual",
+     "expected": "income",
+     "got": "income",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "departamento",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "puesto",
+     "expected": "occupation",
+     "got": "occupation",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "fecha_alta",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "fecha_nacimiento",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "estado_civil",
+     "expected": "marital_status",
+     "got": "marital_status",
+     "status": "TP"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "afiliacion_sindical",
+     "expected": "trade_union",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "motivo_baja",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "centro_trabajo",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "cuenta_contable",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "nomina_empleados.tsv",
+     "column": "cif_empresa",
+     "expected": null,
+     "got": "vat_number",
+     "status": "FP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "IPP",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "NIR",
+     "expected": "national_id",
+     "got": "fr_nir",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "nom",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "prenom",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "date_naissance",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "sexe",
+     "expected": "gender",
+     "got": "gender",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "groupe_sanguin",
+     "expected": "health",
+     "got": "health",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "code_cim10",
+     "expected": "health",
+     "got": "health",
+     "status": "TP"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "test_brca1",
+     "expected": "genetic",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "medecin_referent",
+     "expected": "person_name",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "service",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "chambre",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "date_entree",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "mutuelle",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "finess_etab",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "patients_hopital.csv",
+     "column": "commentaire_infirmier",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "claimnummer",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "schadedatum",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "schadebedrag",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.naam",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.bsn",
+     "expected": "national_id",
+     "got": "nl_bsn",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.geboortedatum",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.adres.straat",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.adres.postcode",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.adres.woonplaats",
+     "expected": "city",
+     "got": "city",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "verzekerde.telefoon",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "voertuig.kenteken",
+     "expected": "vehicle_plate",
+     "got": "vehicle_plate",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "voertuig.merk",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "voertuig.bouwjaar",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "omschrijving",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "expert.bureau",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "expert.vestiging",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "schadeclaims.json",
+     "column": "expert.kvk",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "n_processo",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "nome_aluno",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "data_nascimento",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "idade",
+     "expected": "age",
+     "got": "age",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "nif_aluno",
+     "expected": "national_id",
+     "got": "pt_nif",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "turma",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "ano_letivo",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "encarregado_educacao",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "telemovel_ee",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "email_ee",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "nee",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "emrc",
+     "expected": "religion",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "escola",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "morada_escola",
+     "expected": null,
+     "got": "postal_address",
+     "status": "FP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "cod_postal_escola",
+     "expected": null,
+     "got": "postal_code",
+     "status": "FP"
+    },
+    {
+     "table": "alunos_escola.csv",
+     "column": "media_turma",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "nr_karty",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "imie_i_nazwisko",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "pesel",
+     "expected": "national_id",
+     "got": "pl_pesel",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "plec",
+     "expected": "gender",
+     "got": "gender",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "wiek",
+     "expected": "age",
+     "got": "age",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "tel",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "e_mail",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "kontuzje_uwagi",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "szablon_odcisku_palca",
+     "expected": "biometric",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "klub",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "adres_klubu",
+     "expected": null,
+     "got": "postal_address",
+     "status": "FP"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "karnet_typ",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "cena_pln",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "data_zakupu",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "czlonkowie_silowni.csv",
+     "column": "kod_promocyjny",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "resa_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "forar_id",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "passagerar_id",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "forare_personnr",
+     "expected": "national_id",
+     "got": "se_personnummer",
+     "status": "TP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "regnr",
+     "expected": "vehicle_plate",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "start_lat",
+     "expected": "geolocation",
+     "got": "geolocation",
+     "status": "TP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "start_lon",
+     "expected": "geolocation",
+     "got": "geolocation",
+     "status": "TP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "starttid",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "avstand_km",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "pris_sek",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "betalmetod",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "enhets_id",
+     "expected": "device_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "zon",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "zon_lat",
+     "expected": null,
+     "got": "geolocation",
+     "status": "FP"
+    },
+    {
+     "table": "resor_gps.csv",
+     "column": "zon_lon",
+     "expected": null,
+     "got": "geolocation",
+     "status": "FP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "signup_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "first_name",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "postcode",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "consent.marketing",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "consent.ts",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "consent.policy_version",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.campaign",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.ip",
+     "expected": "ip_address",
+     "got": "ip_address",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.ua",
+     "expected": "user_agent",
+     "got": "user_agent",
+     "status": "TP"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "source.landing_page",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "prefs.topics",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "newsletter_signups.jsonl",
+     "column": "prefs.frequency",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "event_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "tidsstempel",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "cookie_id",
+     "expected": "device_id",
+     "got": "device_id",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "session_id",
+     "expected": "device_id",
+     "got": "device_id",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "bruger_id",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "ip_adresse",
+     "expected": "ip_address",
+     "got": "ip_address",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "user_agent",
+     "expected": "user_agent",
+     "got": "user_agent",
+     "status": "TP"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "annonce_id",
+     "expected": "device_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "side_url",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "produkt_sku",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "kurv_vaerdi_dkk",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "indholds_hash",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "web_haendelser.tsv",
+     "column": "server_ip",
+     "expected": null,
+     "got": "ip_address",
+     "status": "FP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "cislo_tiketu",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "vytvoreno",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "jmeno_zakaznika",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "rodne_cislo",
+     "expected": "national_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "telefon",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "predmet",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "popis_problemu",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "stav",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "resitel",
+     "expected": "person_name",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "produkt",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "podpora_tikety.csv",
+     "column": "cislo_objednavky",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "tranzakcio_azonosito",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "ugyfel_azonosito",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "szamla_iban",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "c3",
+     "expected": "payment_card",
+     "got": "payment_card",
+     "status": "TP"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "szemelyi_szam",
+     "expected": "national_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "osszeg_huf",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "konyvelesi_datum",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "kereskedo",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "kereskedo_varos",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "mcc",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "kozlemeny",
+     "expected": "free_text",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "csatorna",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "tranzakciok.csv",
+     "column": "referencia_hash",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "laite_id",
+     "expected": "device_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "mittausaika",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "lampotila_c",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "kulutus_kwh",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "firmware",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "anturi_malli",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "asiakas_hetu",
+     "expected": "national_id",
+     "got": "fi_hetu",
+     "status": "TP"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "asennusosoite",
+     "expected": "postal_address",
+     "got": "postal_address",
+     "status": "TP"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "postinumero",
+     "expected": "postal_code",
+     "got": "postal_code",
+     "status": "TP"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "kunta",
+     "expected": "city",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "koordinaatit",
+     "expected": "geolocation",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "col12",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "iot_mittaukset.csv",
+     "column": "verkkoalue",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "ApplicantRef",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Full Name",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Mobile",
+     "expected": "phone",
+     "got": "phone",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "NINO",
+     "expected": "national_id",
+     "got": "uk_nino",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "PPSN",
+     "expected": "national_id",
+     "got": "ie_pps",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "DOB",
+     "expected": "date_of_birth",
+     "got": "date_of_birth",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Nationality",
+     "expected": "nationality",
+     "got": "nationality",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Highest Qualification",
+     "expected": "education",
+     "got": "occupation",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Current Job Title",
+     "expected": "occupation",
+     "got": "occupation",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Current Employer",
+     "expected": null,
+     "got": "occupation",
+     "status": "FP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Expected Salary",
+     "expected": "income",
+     "got": "income",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Ethnicity",
+     "expected": "racial_ethnic_origin",
+     "got": "racial_ethnic_origin",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Disability",
+     "expected": "health",
+     "got": "health",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Unspent Convictions",
+     "expected": "criminal",
+     "got": "criminal",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Sexual Orientation",
+     "expected": "sex_life_orientation",
+     "got": "sex_life_orientation",
+     "status": "TP"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Vacancy Code",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Applied On",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "applicants.xlsx::Applicants",
+     "column": "Recruiter Notes",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "entry_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "posting_date",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "account_code",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "cost_center",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "description",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "amount_eur",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "currency",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_name",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_vat",
+     "expected": null,
+     "got": "vat_number",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_iban",
+     "expected": null,
+     "got": "iban",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_email",
+     "expected": null,
+     "got": "email",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "vendor_phone",
+     "expected": null,
+     "got": "phone",
+     "status": "FP"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "invoice_no",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::ledger",
+     "column": "fiscal_period",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "claim_id",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "emp_no",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "employee_name",
+     "expected": "person_name",
+     "got": "person_name",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "work_email",
+     "expected": "email",
+     "got": "email",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "iban",
+     "expected": "iban",
+     "got": "iban",
+     "status": "TP"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "amount",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "category",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "submitted_at",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "approver",
+     "expected": "person_name",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "receipt_ref",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "finance.db::expense_claims",
+     "column": "notes",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "αναγνωριστικό_ερωτώμενου",
+     "expected": "customer_id",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "έκδοση_ερωτηματολογίου",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "ημερομηνία_υποβολής",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "ηλικία",
+     "expected": "age",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "φύλο",
+     "expected": "gender",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "πόλη",
+     "expected": "city",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "οικογενειακή_κατάσταση",
+     "expected": "marital_status",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "εισόδημα_κλίμακα",
+     "expected": "income",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "θρήσκευμα",
+     "expected": "religion",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "κόμμα_ψήφου",
+     "expected": "political_opinion",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "μέλος_συνδικάτου",
+     "expected": "trade_union",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "χρόνια_πάθηση",
+     "expected": "health",
+     "got": null,
+     "status": "FN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "q7",
+     "expected": null,
+     "got": null,
+     "status": "TN"
+    },
+    {
+     "table": "ereuna_kinonikon_stasewn.csv",
+     "column": "σχόλια",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    },
+    {
+     "table": "app_server.log",
+     "column": "line",
+     "expected": "free_text",
+     "got": "free_text",
+     "status": "TP"
+    }
+   ]
+  }
+ }
+}

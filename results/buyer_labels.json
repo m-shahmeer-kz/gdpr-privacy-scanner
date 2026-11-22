@@ -1,0 +1,419 @@
+{
+ "Heart.csv": {
+  "column_1": null,
+  "Age": "age",
+  "Sex": "gender",
+  "ChestPain": "health",
+  "RestBP": "health",
+  "Chol": "health",
+  "Fbs": "health",
+  "RestECG": "health",
+  "MaxHR": "health",
+  "ExAng": "health",
+  "Oldpeak": "health",
+  "Slope": "health",
+  "Ca": "health",
+  "Thal": "health",
+  "AHD": "health"
+ },
+ "Telco-Customer-Churn.csv": {
+  "customerID": "customer_id",
+  "gender": "gender",
+  "SeniorCitizen": "age",
+  "Partner": "marital_status",
+  "Dependents": null,
+  "tenure": null,
+  "PhoneService": null,
+  "MultipleLines": null,
+  "InternetService": null,
+  "OnlineSecurity": null,
+  "OnlineBackup": null,
+  "DeviceProtection": null,
+  "TechSupport": null,
+  "StreamingTV": null,
+  "StreamingMovies": null,
+  "Contract": null,
+  "PaperlessBilling": null,
+  "PaymentMethod": null,
+  "MonthlyCharges": null,
+  "TotalCharges": null,
+  "Churn": null
+ },
+ "adult.csv": {
+  "age": "age",
+  "workclass": null,
+  "fnlwgt": null,
+  "education": "education",
+  "educational-num": "education",
+  "marital-status": "marital_status",
+  "occupation": "occupation",
+  "relationship": "marital_status",
+  "race": "racial_ethnic_origin",
+  "gender": "gender",
+  "capital-gain": "income",
+  "capital-loss": "income",
+  "hours-per-week": null,
+  "native-country": "nationality",
+  "income": "income"
+ },
+ "insurance.csv": {
+  "age": "age",
+  "sex": "gender",
+  "bmi": "health",
+  "children": null,
+  "smoker": "health",
+  "region": "city",
+  "charges": null
+ },
+ "titanic3.csv": {
+  "pclass": null,
+  "survived": null,
+  "name": "person_name",
+  "sex": "gender",
+  "age": "age",
+  "sibsp": null,
+  "parch": null,
+  "ticket": null,
+  "fare": null,
+  "cabin": null,
+  "embarked": null,
+  "boat": null,
+  "body": null,
+  "home.dest": "city"
+ },
+ "winequality-red.csv": {
+  "fixed acidity": null,
+  "volatile acidity": null,
+  "citric acid": null,
+  "residual sugar": null,
+  "chlorides": null,
+  "free sulfur dioxide": null,
+  "total sulfur dioxide": null,
+  "density": null,
+  "pH": null,
+  "sulphates": null,
+  "alcohol": null,
+  "quality": null
+ },
+ "chinook.db::Album": {
+  "AlbumId": null,
+  "Title": null,
+  "ArtistId": null
+ },
+ "chinook.db::Artist": {
+  "ArtistId": null,
+  "Name": null
+ },
+ "chinook.db::Customer": {
+  "CustomerId": "customer_id",
+  "FirstName": "person_name",
+  "LastName": "person_name",
+  "Company": null,
+  "Address": "postal_address",
+  "City": "city",
+  "State": "city",
+  "Country": null,
+  "PostalCode": "postal_code",
+  "Phone": "phone",
+  "Fax": "phone",
+  "Email": "email",
+  "SupportRepId": "customer_id"
+ },
+ "chinook.db::Employee": {
+  "EmployeeId": "customer_id",
+  "LastName": "person_name",
+  "FirstName": "person_name",
+  "Title": "occupation",
+  "ReportsTo": "customer_id",
+  "BirthDate": "date_of_birth",
+  "HireDate": null,
+  "Address": "postal_address",
+  "City": "city",
+  "State": "city",
+  "Country": null,
+  "PostalCode": "postal_code",
+  "Phone": "phone",
+  "Fax": "phone",
+  "Email": "email"
+ },
+ "chinook.db::Genre": {
+  "GenreId": null,
+  "Name": null
+ },
+ "chinook.db::Invoice": {
+  "InvoiceId": null,
+  "CustomerId": "customer_id",
+  "InvoiceDate": null,
+  "BillingAddress": "postal_address",
+  "BillingCity": "city",
+  "BillingState": "city",
+  "BillingCountry": null,
+  "BillingPostalCode": "postal_code",
+  "Total": null
+ },
+ "chinook.db::InvoiceLine": {
+  "InvoiceLineId": null,
+  "InvoiceId": null,
+  "TrackId": null,
+  "UnitPrice": null,
+  "Quantity": null
+ },
+ "chinook.db::MediaType": {
+  "MediaTypeId": null,
+  "Name": null
+ },
+ "chinook.db::Playlist": {
+  "PlaylistId": null,
+  "Name": null
+ },
+ "chinook.db::PlaylistTrack": {
+  "PlaylistId": null,
+  "TrackId": null
+ },
+ "chinook.db::Track": {
+  "TrackId": null,
+  "Name": null,
+  "AlbumId": null,
+  "MediaTypeId": null,
+  "GenreId": null,
+  "Composer": "person_name",
+  "Milliseconds": null,
+  "Bytes": null,
+  "UnitPrice": null
+ },
+ "northwind.db::Categories": {
+  "CategoryID": null,
+  "CategoryName": null,
+  "Description": null,
+  "Picture": null
+ },
+ "northwind.db::CustomerCustomerDemo": {
+  "CustomerID": null,
+  "CustomerTypeID": null
+ },
+ "northwind.db::CustomerDemographics": {
+  "CustomerTypeID": null,
+  "CustomerDesc": null
+ },
+ "northwind.db::Customers": {
+  "CustomerID": null,
+  "CompanyName": null,
+  "ContactName": "person_name",
+  "ContactTitle": "occupation",
+  "Address": null,
+  "City": null,
+  "Region": null,
+  "PostalCode": null,
+  "Country": null,
+  "Phone": null,
+  "Fax": null
+ },
+ "northwind.db::EmployeeTerritories": {
+  "EmployeeID": "customer_id",
+  "TerritoryID": null
+ },
+ "northwind.db::Employees": {
+  "EmployeeID": "customer_id",
+  "LastName": "person_name",
+  "FirstName": "person_name",
+  "Title": "occupation",
+  "TitleOfCourtesy": "gender",
+  "BirthDate": "date_of_birth",
+  "HireDate": null,
+  "Address": "postal_address",
+  "City": "city",
+  "Region": "city",
+  "PostalCode": "postal_code",
+  "Country": null,
+  "HomePhone": "phone",
+  "Extension": null,
+  "Photo": null,
+  "Notes": "free_text",
+  "ReportsTo": "customer_id",
+  "PhotoPath": null
+ },
+ "northwind.db::Order Details": {
+  "OrderID": null,
+  "ProductID": null,
+  "UnitPrice": null,
+  "Quantity": null,
+  "Discount": null
+ },
+ "northwind.db::Orders": {
+  "OrderID": null,
+  "CustomerID": null,
+  "EmployeeID": "customer_id",
+  "OrderDate": null,
+  "RequiredDate": null,
+  "ShippedDate": null,
+  "ShipVia": null,
+  "Freight": null,
+  "ShipName": null,
+  "ShipAddress": null,
+  "ShipCity": null,
+  "ShipRegion": null,
+  "ShipPostalCode": null,
+  "ShipCountry": null
+ },
+ "northwind.db::Products": {
+  "ProductID": null,
+  "ProductName": null,
+  "SupplierID": null,
+  "CategoryID": null,
+  "QuantityPerUnit": null,
+  "UnitPrice": null,
+  "UnitsInStock": null,
+  "UnitsOnOrder": null,
+  "ReorderLevel": null,
+  "Discontinued": null
+ },
+ "northwind.db::Regions": {
+  "RegionID": null,
+  "RegionDescription": null
+ },
+ "northwind.db::Shippers": {
+  "ShipperID": null,
+  "CompanyName": null,
+  "Phone": null
+ },
+ "northwind.db::Suppliers": {
+  "SupplierID": null,
+  "CompanyName": null,
+  "ContactName": "person_name",
+  "ContactTitle": "occupation",
+  "Address": null,
+  "City": null,
+  "Region": null,
+  "PostalCode": null,
+  "Country": null,
+  "Phone": null,
+  "Fax": null,
+  "HomePage": null
+ },
+ "northwind.db::Territories": {
+  "TerritoryID": null,
+  "TerritoryDescription": null,
+  "RegionID": null
+ },
+ "sakila.db::actor": {
+  "actor_id": "customer_id",
+  "first_name": "person_name",
+  "last_name": "person_name",
+  "last_update": null
+ },
+ "sakila.db::address": {
+  "address_id": null,
+  "address": "postal_address",
+  "address2": "postal_address",
+  "district": "city",
+  "city_id": null,
+  "postal_code": "postal_code",
+  "phone": "phone",
+  "last_update": null
+ },
+ "sakila.db::category": {
+  "category_id": null,
+  "name": null,
+  "last_update": null
+ },
+ "sakila.db::city": {
+  "city_id": null,
+  "city": null,
+  "country_id": null,
+  "last_update": null
+ },
+ "sakila.db::country": {
+  "country_id": null,
+  "country": null,
+  "last_update": null
+ },
+ "sakila.db::customer": {
+  "customer_id": "customer_id",
+  "store_id": null,
+  "first_name": "person_name",
+  "last_name": "person_name",
+  "email": "email",
+  "address_id": null,
+  "active": null,
+  "create_date": null,
+  "last_update": null
+ },
+ "sakila.db::film": {
+  "film_id": null,
+  "title": null,
+  "description": null,
+  "release_year": null,
+  "language_id": null,
+  "original_language_id": null,
+  "rental_duration": null,
+  "rental_rate": null,
+  "length": null,
+  "replacement_cost": null,
+  "rating": null,
+  "special_features": null,
+  "last_update": null
+ },
+ "sakila.db::film_actor": {
+  "actor_id": "customer_id",
+  "film_id": null,
+  "last_update": null
+ },
+ "sakila.db::film_category": {
+  "film_id": null,
+  "category_id": null,
+  "last_update": null
+ },
+ "sakila.db::film_text": {
+  "film_id": null,
+  "title": null,
+  "description": null
+ },
+ "sakila.db::inventory": {
+  "inventory_id": null,
+  "film_id": null,
+  "store_id": null,
+  "last_update": null
+ },
+ "sakila.db::language": {
+  "language_id": null,
+  "name": null,
+  "last_update": null
+ },
+ "sakila.db::payment": {
+  "payment_id": null,
+  "customer_id": "customer_id",
+  "staff_id": "customer_id",
+  "rental_id": null,
+  "amount": null,
+  "payment_date": null,
+  "last_update": null
+ },
+ "sakila.db::rental": {
+  "rental_id": null,
+  "rental_date": null,
+  "inventory_id": null,
+  "customer_id": "customer_id",
+  "return_date": null,
+  "staff_id": "customer_id",
+  "last_update": null
+ },
+ "sakila.db::staff": {
+  "staff_id": "customer_id",
+  "first_name": "person_name",
+  "last_name": "person_name",
+  "address_id": null,
+  "picture": null,
+  "email": "email",
+  "store_id": null,
+  "active": null,
+  "username": "customer_id",
+  "password": null,
+  "last_update": null
+ },
+ "sakila.db::store": {
+  "store_id": null,
+  "manager_staff_id": "customer_id",
+  "address_id": null,
+  "last_update": null
+ }
+}
